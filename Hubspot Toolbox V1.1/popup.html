@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>HubSpot Toolbox</title>
+  <link rel="stylesheet" type="text/css" href="popup.css">
+</head>
+<body>
+  <div id="header">
+    <h1>HubSpot Toolbox</h1>
+    <h4>By <a href="https://www.linkedin.com/in/christian-baun/" target="_blank">Christian Baun</a></h4>
+  </div>
+  <div id="content">
+    <!-- New HubSpot Tab -->
+    <div class="category">
+      <h2>Control Center</h2>
+      <div class="hubspot-content">
+        <label for="dark-mode-toggle">Enable Dark Mode:</label>
+        <label class="switch">
+          <input type="checkbox" id="dark-mode-toggle">
+          <span class="slider round"></span>
+        </label>
+        <div class="quick-note">
+          <label for="quick-note">Quick Note:</label>
+          <textarea id="quick-note" rows="4" cols="35" placeholder="Write down reminders, thoughts, or to-do's..."></textarea>
+          <button id="save-note">Save Note</button>
+          <p id="note-status">Your note will remain saved in this extension.</p>
+        </div>
+        <div class="color-picker">
+          <label for="color-picker">Pick Color:</label>
+          <input type="color" id="color-picker">
+          <div id="color-display"></div>
+          <button id="copy-hex">Copy HEX</button>
+          <p id="color-info">Selected Color: <span id="color-hex">#FFFFFF</span>, <span id="color-rgb">rgb(255, 255, 255)</span></p>
+        </div>
+      </div>
+    </div>
+
+    <!-- UTM Generator Section -->
+    <div class="category">
+      <h2>UTM Generator</h2>
+      <div class="utm-generator-content">
+        <form id="utm-generator">
+          <label for="url">URL:</label>
+          <input type="text" id="url" name="url">
+          <label for="utm_source">utm_source:</label>
+          <input type="text" id="utm_source" name="utm_source">
+          <label for="utm_medium">utm_medium:</label>
+          <input type="text" id="utm_medium" name="utm_medium">
+          <label for="utm_campaign">utm_campaign:</label>
+          <input type="text" id="utm_campaign" name="utm_campaign">
+          <label for="utm_content">utm_content:</label>
+          <input type="text" id="utm_content" name="utm_content">
+          <label for="utm_term">utm_term:</label>
+          <input type="text" id="utm_term" name="utm_term">
+          <p id="generated-url"></p>
+          <button type="button" id="generate-btn">Generate URL</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Content Creation and Optimization -->
+    <div class="category">
+      <h2>Content Creation and Optimization</h2>
+      <ul>
+        <li><a href="https://www.subjectline.com/" target="_blank">Optimize Email Subject Lines</a></li>
+        <li><a href="https://loremipsum.io/" target="_blank">Create Placeholder Text (Lorem Ipsum)</a></li>
+        <li><a href="https://www.mockaroo.com/" target="_blank">Generate Mock Data Records</a></li>
+        <li><a href="https://www.diffchecker.com/text-compare/" target="_blank">Find Differences in Text</a></li>
+        <li><a href="https://www.grammarly.com/" target="_blank">Online Writing Assistant</a></li>
+        <li><a href="https://www.canva.com/" target="_blank">Online Design Tool</a></li>
+        <li><a href="https://piktochart.com/" target="_blank">Create Infographics</a></li>
+        <li><a href="https://hemingwayapp.com/" target="_blank">Improve Your Writing</a></li>
+        <li><a href="https://docs.google.com/document/u/0/" target="_blank">Create and Edit Documents</a></li>
+        <li><a href="https://coschedule.com/headline-analyzer" target="_blank">Headline Analyzer</a></li>
+        <li><a href="https://www.hubspot.com/blog-topic-generator" target="_blank">Content Idea Generator</a></li>
+        <li><a href="https://convertcase.net/" target="_blank">Convert Text Case</a></li>
+      </ul>
+    </div>
+
+    <!-- SEO and Analytics -->
+    <div class="category">
+      <h2>SEO and Analytics</h2>
+      <ul>
+        <li><a href="https://neilpatel.com/ubersuggest/" target="_blank">Keyword Research Tool</a></li>
+        <li><a href="https://ahrefs.com/backlink-checker" target="_blank">Backlink Checker</a></li>
+        <li><a href="https://analytics.google.com/analytics/web/provision/#/provision" target="_blank">Track Website Performance</a></li>
+        <li><a href="https://search.google.com/search-console/about" target="_blank">Monitor Search Performance</a></li>
+        <li><a href="https://website.grader.com/" target="_blank">Evaluate Website Performance</a></li>
+        <li><a href="https://www.hotjar.com/" target="_blank">Understand User Behavior</a></li>
+        <li><a href="https://lookerstudio.google.com/u/0/navigation/reporting" target="_blank">Create Interactive Reports</a></li>
+        <li><a href="https://public.tableau.com/app/discover" target="_blank">Free Data Visualization Tool</a></li>
+        <li><a href="https://pagespeed.web.dev/?utm_source=psi&utm_medium=redirect" target="_blank">Page Speed Test</a></li>
+        <li><a href="https://www.similarweb.com/" target="_blank">Competitive Analysis Tool</a></li>
+      </ul>
+    </div>
+
+    <!-- Social Media and Video -->
+    <div class="category">
+      <h2>Social Media and Video</h2>
+      <ul>
+        <li><a href="https://giphy.com/" target="_blank">Giphy</a></li>
+        <li><a href="https://buffer.com/" target="_blank">Manage Social Media</a></li>
+        <li><a href="https://later.com/" target="_blank">Schedule Social Media Posts</a></li>
+        <li><a href="https://www.loom.com/looms/videos" target="_blank">Record Video Screenclips</a></li>
+        <li><a href="https://lumen5.com/" target="_blank">Create AI Marketing Videos</a></li>
+        <li><a href="https://giphy.com/create/gifmaker" target="_blank">GIF Maker</a></li>
+        <li><a href="https://sproutsocial.com/insights/social-media-image-sizes-guide/" target="_blank">Social Media Image Size Guide</a></li>
+        <li><a href="https://embedresponsively.com/" target="_blank">Video Embed Generator</a></li>
+        <li><a href="https://www.clickfunnels.com/business-tools/add-play-button-to-image" target="_blank">Add Play Button to Image</a></li>
+      </ul>
+    </div>
+
+    <!-- Image and File Management -->
+    <div class="category">
+      <h2>Image and File Management</h2>
+      <ul>
+        <li><a href="https://compressjpeg.com/" target="_blank">Compress JPGs</a></li>
+        <li><a href="https://tinypng.com/" target="_blank">Compress PNGs</a></li>
+        <li><a href="https://image.online-convert.com/convert-to-svg" target="_blank">Convert to SVG</a></li>
+        <li><a href="https://crop-circle.imageonline.co/" target="_blank">Create Circle Images</a></li>
+        <li><a href="https://placeholder.com/" target="_blank">Create Placeholder Images</a></li>
+        <li><a href="https://fullpagescreencapture.com/" target="_blank">Capture Fullpage Screenshot</a></li>
+        <li><a href="https://worldvectorlogo.com/" target="_blank">Download Company Logos & Icons</a></li>
+        <li><a href="https://smallpdf.com/split-pdf" target="_blank">Remove PDF Pages</a></li>
+        <li><a href="https://convert.town/" target="_blank">Convert Files Between Types</a></li>
+        <li><a href="https://www.iloveimg.com/resize-image" target="_blank">Image Resizer</a></li>
+        <li><a href="https://compressor.io/" target="_blank">Image Compression</a></li>
+        <li><a href="https://pdf2jpg.net/" target="_blank">PDF to Image Converter</a></li>
+        <li><a href="https://www.zamzar.com/" target="_blank">File Format Converter</a></li>
+      </ul>
+    </div>
+
+    <!-- Sales Resources -->
+    <div class="category">
+      <h2>Sales Resources</h2>
+      <ul>
+        <li><a href="https://hunter.io/" target="_blank">Hunter.io</a></li>
+        <li><a href="https://business.linkedin.com/sales-solutions/sales-navigator" target="_blank">LinkedIn Sales Navigator Lite</a></li>
+        <li><a href="https://www.docusign.com/" target="_blank">DocuSign</a></li>
+        <li><a href="https://calendly.com/" target="_blank">Calendly</a></li>
+        <li><a href="https://zoom.us/" target="_blank">Zoom</a></li>
+      </ul>
+    </div>
+
+    <!-- Growth Insights -->
+    <div class="category">
+      <h2>Growth Insights</h2>
+      <ul>
+        <li><a href="https://www.hubspot.com/blog-topic-generator" target="_blank">Blog Ideas Generator</a></li>
+        <li><a href="https://www.hubspot.com/campaign-assistant" target="_blank">Campaign Assistant</a></li>
+        <li><a href="https://www.hubspot.com/clip-creator" target="_blank">Clip Creator</a></li>
+        <li><a href="https://www.hubspot.com/make-my-persona" target="_blank">Make My Persona</a></li>
+        <li><a href="https://www.hubspot.com/brand-kit-generator" target="_blank">Brand Kit Generator</a></li>
+        <li><a href="https://www.hubspot.com/email-signature-generator" target="_blank">Email Signature Generator</a></li>
+        <li><a href="https://www.hubspot.com/guide-creator" target="_blank">Guide Creator</a></li>
+        <li><a href="https://christianbaun.gumroad.com/l/hubspot-checklist" target="_blank">HubSpot Setup Checklist</a></li>
+        <li><a href="https://website.grader.com/" target="_blank">Website Grader</a></li>
+        <li><a href="https://www.optimizely.com/optimization-glossary/ab-testing/" target="_blank">A/B Test Planner</a></li>
+        <li><a href="https://www.surveymonkey.com/" target="_blank">Survey Creator</a></li>
+        <li><a href="https://www.hubspot.com/products/service/customer-feedback" target="_blank">Customer Feedback Collector</a></li>
+        <li><a href="https://landbot.io/" target="_blank">AI Chatbot Script Generator</a></li>
+        <li><a href="https://www.eventbrite.com/" target="_blank">Event Tracker</a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="footer">
+    <p>Enjoying this tool? <a href="https://buymeacoffee.com/christianbaun" target="_blank">Show your support with a coffee!</a></p>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>
