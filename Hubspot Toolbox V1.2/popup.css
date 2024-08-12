@@ -1,0 +1,326 @@
+/* Import HubSpot Brand Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@300;400;600&family=Queens:wght@500;700;800&display=swap');
+
+/* General Body Font - Lexend Deca */
+body {
+  font-family: 'Lexend Deca', sans-serif;
+  width: 340px;  /* Adjust as per your preferred width */
+  padding: 0;
+  margin: 0;
+  background-color: #f5f8fa;
+}
+
+/* Top Bar */
+#top-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px;
+    background-color: #f0f0f0; /* Soft gray background */
+    border-bottom: 1px solid #ccc;
+    border-radius: 4px; /* Add slight rounding to match other elements */
+}
+
+/* Search Input */
+#search-input {
+    width: 70%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 14px;
+    font-family: 'Lexend Deca', sans-serif; /* Use the same font */
+}
+
+/* Universal Button Style */
+button {
+    padding: 7px 18px; /* Consistent padding for all buttons */
+    background-color: #ff7a59; /* HubSpot orange */
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    font-weight: normal;
+    font-family: 'Lexend Deca', sans-serif; /* Use the same font */
+    transition: background-color 0.3s ease; /* Smooth transition */
+    line-height: normal; /* Ensure it aligns well */
+}
+
+button:hover {
+    background-color: #e66d48; /* Darker orange on hover */
+}
+
+/* Header Background Color (Solid) */
+#header {
+  text-align: center;
+  background-color: #192733; /* Solid background color */
+  color: white;
+  padding: 20px;
+  border-bottom: 0px solid #ccc;
+}
+
+/* Header Fonts */
+#header h1 {
+  margin: 0;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+#header h4 {
+  margin: 0;
+  font-size: 14px;
+  font-weight: normal; /* Make the subheading not bold */
+}
+
+#header h4 a {
+  color: #ff7a59;
+  text-decoration: none;
+}
+
+/* Category Headers */
+.category h2 {
+  background-color: #2E3E50;  /* Dark navy color */
+  color: white;
+  padding: 15px;
+  margin: 0;  /* Remove margin to eliminate white space between categories */
+  font-size: 14px;
+  font-weight: normal; /* Un-bold the categories */
+  width: 100%;  /* Ensure full width */
+  cursor: pointer;
+  position: relative;
+  display: flex;
+  align-items: center; /* Align icon and text vertically */
+}
+
+/* Category Icon */
+.category-icon {
+  width: 20px; /* Size the icon appropriately */
+  height: 20px;
+  vertical-align: middle;
+  margin-right: 10px; /* Space between icon and text */
+}
+
+/* Base style for the arrow, hidden initially */
+.category h2::after {
+  content: '>';  /* Simple right arrow */
+  color: white;
+  position: absolute;
+  right: 50px;  /* Increase the space from the right */
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  opacity: 0;  /* Start hidden */
+}
+
+/* Show the arrow only on hover */
+.category h2:hover::after {
+  opacity: 1;  /* Show arrow on hover */
+}
+
+/* Hover Effect for Category Headers */
+.category h2:hover {
+  background-color: #4B6C8A; /* New hover color */
+}
+
+/* Remove padding from content to allow full-width categories */
+#content {
+  padding: 0; 
+}
+
+/* Content Styling */
+.hubspot-content, .utm-generator-content, ul {
+  display: none;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  background-color: #ffffff;
+}
+
+/* Links in Content */
+.category ul li a {
+  text-decoration: none;
+  color: #00a4bd;
+  display: block;
+  padding: 10px;
+  border-bottom: 0px solid #eee;
+}
+
+.category ul li a:hover {
+  background-color: #f0f0f0;
+}
+
+/* Footer */
+#footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #192733; /* Match the header background */
+  border-top: 0px solid #ddd;
+  font-size: 12px;
+}
+
+#footer a {
+  color: #ff7a59;
+  text-decoration: none;
+}
+
+#footer p {
+  color: white; /* Change "Enjoying this tool?" text to white */
+}
+
+#footer a:hover {
+  text-decoration: underline;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  padding: 10px;
+  background-color: #ffffff;
+  border: none;
+  margin-bottom: 0;
+}
+
+form label {
+  margin: 5px 0 2px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+form input, textarea {
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+/* Ensure spacing between text area and help text */
+#quick-note + #note-status {
+    margin-top: 10px; /* Space between text area and help text */
+}
+
+/* Ensure there's space between the "Pick Color" button and the color display bar */
+.color-picker #color-display {
+    margin-top: 10px; /* Add space between the button and color display */
+}
+
+#generated-url {
+  margin-top: 10px;
+  word-break: break-all;
+  color: #333;
+  background-color: #f9f9f9;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #ddd;
+}
+
+/* HubSpot Content */
+.hubspot-content {
+  padding: 10px;
+  background-color: #ffffff;
+  border: none;
+  margin-bottom: 0;
+}
+
+.hubspot-content label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.hubspot-content textarea {
+  font-family: 'Lexend Deca', sans-serif, monospace;
+}
+
+.hubspot-content p {
+  margin: 5px 0;
+  font-size: 12px;
+}
+
+/* Additional styling for color info */
+#color-info {
+    margin-top: 10px; /* Space between color display and the color info text */
+    font-size: 12px;
+}
+
+/* Dark Mode Toggle Switch */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 34px;
+  height: 20px;
+}
+
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+  transition: .4s;
+  border-radius: 34px;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 14px;
+  width: 14px;
+  left: 3px;
+  bottom: 3px;
+  background-color: white;
+  transition: .4s;
+  border-radius: 50%;
+}
+
+input:checked + .slider {
+  background-color: #ff7a59;
+}
+
+input:checked + .slider:before {
+  transform: translateX(14px);
+}
+
+/* Color Picker */
+.color-picker {
+  margin-top: 10px;
+}
+
+.color-picker label {
+  display: block;
+  margin-bottom: 5px;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+.color-picker input {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+  font-size: 14px;
+}
+
+.color-picker #color-display {
+  width: 100%;
+  height: 30px;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+#color-info {
+  margin-top: 10px;
+  font-size: 12px;
+}
